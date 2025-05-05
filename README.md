@@ -29,7 +29,7 @@ Esta é a minha solução para o desafio [Product preview card component challen
 
 ### Links
 
-- URL do site publicado: [Clique aqui]()
+- URL do site publicado: [Clique aqui](https://guilherme-ddiniz.github.io/product-preview-card-component-main/)
 
 ---
 
