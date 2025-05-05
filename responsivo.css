@@ -1,0 +1,116 @@
+@media(max-width:615px) {
+    .produto {
+        width: 350px;
+        height: auto;
+        grid-template:
+            "imagem"
+            "informacoes";
+    }
+
+    .produto img {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    /* Organização das informações do cartão */
+
+    .produto .informacoes-do-produto .tipo-do-produto {
+        font-size: var(--paragrafos-tamanho-fonte-tela-pequena-1);
+        margin-bottom: 15px;
+    }
+
+    .produto .informacoes-do-produto .nome-do-produto {
+        margin-bottom: 20px;
+    }
+
+    .produto .informacoes-do-produto .preco {
+        padding-right: 85px;
+        margin-bottom: 15px;
+    }
+
+    .produto .informacoes-do-produto .comprar {
+        font-size: var(--paragrafos-tamanho-fonte);
+    }
+}
+
+@media(max-width:360px) {
+    .produto {
+        width: 300px;
+        height: auto;
+        grid-template:
+            "imagem"
+            "informacoes";
+        margin-top: 50px;
+    }
+
+    .produto picture img {
+        width: 300px;
+    }
+
+    /* Organização das informações do cartão */
+
+    .produto .informacoes-do-produto{
+        width: 300px;
+    }
+
+    .produto .informacoes-do-produto .tipo-do-produto {
+        font-size: var(--paragrafos-tamanho-fonte-tela-pequena-1);
+        margin-bottom: 15px;
+    }
+
+    .produto .informacoes-do-produto .nome-do-produto {
+        margin-bottom: 20px;
+        font-size: 27px;
+    }
+
+    .produto .informacoes-do-produto .descricao-do-produto{
+        font-size: var(--paragrafos-tamanho-fonte-tela-pequena-1);
+    }
+
+    .produto .informacoes-do-produto .preco {
+        padding-right: 55px;
+        margin-bottom: 15px;
+    }
+
+    .produto .informacoes-do-produto .comprar {
+        font-size: var(--paragrafos-tamanho-fonte);
+    }
+}
+
+@media(max-width:310px) {
+    .produto {
+        width: 240px;
+        height: auto;
+        grid-template:
+            "imagem"
+            "informacoes";
+        margin-top: 50px;
+    }
+
+    .produto picture img {
+        width: 240px;
+    }
+
+    /* Organização das informações do cartão */
+    .produto .informacoes-do-produto{
+        width: 240px;
+    }
+
+    .produto .informacoes-do-produto .tipo-do-produto {
+        font-size: var(--paragrafos-tamanho-fonte-tela-pequena-1);
+        margin-bottom: 15px;
+    }
+
+    .produto .informacoes-do-produto .nome-do-produto {
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+
+    .produto .informacoes-do-produto .descricao-do-produto{
+        font-size: var(--paragrafos-tamanho-fonte-tela-pequena-1);
+    }
+
+    .produto .informacoes-do-produto .preco .valor-do-produto-com-desconto {
+        font-size: 23px;
+        padding-right: 15px;
+    }
+}

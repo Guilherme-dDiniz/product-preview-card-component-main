@@ -1,0 +1,132 @@
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+
+:root {
+    /* Cores do botão de compra */
+    --Verde: hsl(158, 36%, 37%);
+    --Verde-Hover: hsl(158, 42%, 18%);
+
+    /* Cores do restante do site */
+
+    --Preto: hsl(212, 21%, 14%);
+    --paragrafo-cor: hsl(228, 12%, 48%);
+    --Creme: hsl(30, 38%, 92%);
+    --branco: hsl(0, 0%, 100%);
+
+    --paragrafos-tamanho-fonte: 14px;
+    --paragrafos-tamanho-fonte-tela-pequena-1: 12px;
+    --paragrafos-tipo-fonte: 'Montserrat';
+    --titulos-h1-tipo-fonte: 'Fraunces';
+    --titulos-h1-tamanho-fonte: 32px;
+}
+
+/* Oragnização do fundo da página */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Creme);
+    min-height: 100vh;
+}
+
+/* Organização do cartão do produto */
+.produto {
+    width: 600px;
+    height: 450px;
+    display: grid;
+    grid-template:
+        "imagem informacoes" 400px / 1fr 1fr;
+    background-color: var(--branco);
+    /* background-color: aqua; */
+    border-radius: 10px;
+}
+
+.produto img {
+    grid-area: imagem;
+    max-inline-size: 100%;
+    block-size: auto;
+    border-radius: 10px 0px 0px 10px;
+}
+
+/* Organização das informações do cartão */
+.produto .informacoes-do-produto {
+    grid-area: informacoes;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.produto .informacoes-do-produto .tipo-do-produto {
+    font-family: var(--paragrafos-tipo-fonte);
+    font-size: var(--paragrafos-tamanho-fonte);
+    color: var(--paragrafo-cor);
+    margin-bottom: 23px;
+    line-height: 100%;
+}
+
+.produto .informacoes-do-produto .nome-do-produto {
+    font-family: var(--titulos-h1-tipo-fonte);
+    font-size: var(--titulos-h1-tamanho-fonte);
+    color: var(--Preto);
+    line-height: 100%;
+    margin-bottom: 25px;
+}
+
+.produto .informacoes-do-produto .descricao-do-produto {
+    font-family: var(--paragrafos-tipo-fonte);
+    font-size: var(--paragrafos-tamanho-fonte);
+    color: var(--paragrafo-cor);
+    line-height: 160%;
+    margin-bottom: 20px;
+}
+
+.produto .informacoes-do-produto .preco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 35px;
+    margin-bottom: 28px;
+}
+
+.produto .informacoes-do-produto .preco .valor-do-produto-com-desconto {
+    font-family: var(--titulos-h1-tipo-fonte);
+    font-size: var(--titulos-h1-tamanho-fonte);
+    color: var(--Verde);
+}
+
+.produto .informacoes-do-produto .preco .valor-do-produto-sem-desconto {
+    font-family: var(--paragrafos-tipo-fonte);
+    font-size: var(--paragrafos-tamanho-fonte);
+    color: var(--paragrafo-cor);
+    text-decoration: line-through;
+}
+
+.produto .informacoes-do-produto .comprar {
+    background-color: var(--Verde);
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--branco);
+    font-family: var(--paragrafos-tipo-fonte);
+    font-weight: 600;
+}
+
+.produto .informacoes-do-produto a img {
+    border-radius: 0;
+    position: relative;
+    top: 3px;
+}
+
+.produto .informacoes-do-produto .comprar:hover {
+    background-color: var(--Verde-Hover);
+}
+
+.produto .informacoes-do-produto .comprar:active {
+    background-color: var(--Verde-Hover);
+}
+
+.produto .informacoes-do-produto .comprar:focus {
+    background-color: var(--Verde-Hover);
+    /* border: 1px solid black; */
+}
+
